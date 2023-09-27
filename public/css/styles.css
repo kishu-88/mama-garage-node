@@ -1,0 +1,101 @@
+.header{
+    background-color: black;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 1rem; */
+}
+.mama-logo{
+    /* height: 18%; */
+    left: 2.5rem;
+    /* object-fit: cover; */
+    position: absolute;
+    /* top: 2.2rem; */
+    vertical-align: top;
+    /* width: 15rem; */
+    height: auto; /* Allow the logo to resize with the header */
+    width: auto;
+    max-height: 6rem; /* Limit the logo's maximum height */
+    max-width: 100%;
+}
+.upper-part{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    /* margin-left: -23%; */
+    /* margin-top: -5%; */
+    border-bottom: solid 0.1rem #ffffff;
+    box-sizing: border-box;
+    height: 4rem;
+    left: 20.6rem;
+    position: absolute;
+    width: 100%;
+    top: 5px;
+
+}
+.manigram-branch{
+    color: #ffffff;
+    /* margin-left: 30%; */
+    /* padding-top: 7px; */
+}
+.seperator{
+    color: #ffffff;
+    flex-shrink: 0;
+    font-family: 'Source Sans Pro';
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: -2rem 0rem 0rem 10.6rem;
+    white-space: nowrap;
+}
+.manigram-contact{
+    color: #ffffff;
+    flex-shrink: 0;
+    font-family: 'Source Sans Pro';
+    /* font-size: 1rem; */
+    font-weight: 400;
+    line-height: 1.21;
+    margin: -1.2rem 1.8rem 0rem 11.5rem;
+    white-space: nowrap;
+
+}
+.butwal-branch{
+    color: #ffffff;
+    float: right;
+    margin-left: 10%;
+   
+}
+
+.butwal-contact{
+    color: #ffffff;
+    flex-shrink: 0;
+    font-family: 'Source Sans Pro';
+    /* font-size: 1rem; */
+    font-weight: 400;
+    line-height: 1.21;
+    margin: -1.1rem 0rem 0rem 11.5rem;
+    white-space: nowrap;
+
+}
+
+.lower-part{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 5%;
+    margin-top: 4%;
+    height: 4rem;
+    left: 20.6rem;
+    position: absolute;
+    width: 100%;
+   
+}
+.navbar a{
+    text-decoration: none;
+    color: White;
+    padding: 15px;
+    font-size: 1rem;
+  font-weight: 600;
+}
