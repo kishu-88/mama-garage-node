@@ -21,23 +21,35 @@ html {
     
 }
 
-.headTitle .mama-logo  {
-	height: -webkit-fill-available;
-    border-right: solid 0.2rem #ffffff;
-	/* margin: 2px; */
-    left: 2.5rem;
-    height: auto; /* Allow the logo to resize with the header */
-    width: auto;
-    max-height: 8rem; /* Limit the logo's maximum height */
-    max-width: 100%;
-    position: absolute;
-    top: 0.7rem;
-    vertical-align: top;
-}
-.upper-part p{
-    color: #ffffff;
-    float: right;
-}
+    .headTitle .mama-logo  {
+        height: auto;
+        width: 230px;
+        border-right: solid 0.2rem #ffffff;
+        left: 2.5rem;
+
+    }
+
+    .headTitle .mama-logo .mama-logo-img{
+        height: -webkit-fill-available;
+		margin: 18px 0px 0px 10px;
+        
+        height: auto; /* Allow the logo to resize with the header */
+        width: 200px;
+        max-height: 8rem; /* Limit the logo's maximum height */
+        max-width: 100%;
+        /* position: absolute; */
+        top: 0.7rem;
+        vertical-align: top;
+    }
+
+
+
+    .upper{
+        width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
 .upper-part{
     display: flex;
     font-size: 12px;
@@ -45,12 +57,21 @@ html {
     border-bottom: solid 0.1rem #ffffff;
     box-sizing: border-box;
     height: 4rem;
-    left: 22.6rem;
-    position: absolute;
+    left: 2rem;
+    position: relative;
     width: 100%;
     top: 10px;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
+
+.lower-part{
+
+    width: 100%;
+}
 .manigram-branch{
     color: #ffffff;
     
@@ -65,39 +86,34 @@ html {
     flex-shrink: 0;
     font-weight: 400;
     white-space: nowrap;
-    border-right: solid 0.1rem #ffffff;
     padding-right: 15px;
+    font-size: 12px;
 
 }
-.butwal-branch{
-    color: #ffffff;
-    float: right;
-    margin-left: 10%;
-   
-}
-.butwal{
-    width: fit-content;
-    padding-left: 10px;
+
+.contact-1{
+    border-right: solid 0.1rem #ffffff;
 }
 
 
 header {
-    position: fixed;
-    top: 63px;
-    left: 250px;
-    right: 0;
-    background: var(--white);
-    /* padding: 1rem 7%; */
-    display: flex;
-    justify-content: space-between;
-    box-shadow: var(--box-shadow);
-    z-index: 10000;
+	width: 100%;
+	left: 0;
+	right: 0;
+	background: var(--white);
+	padding: 1rem 7%;
+	display: flex;
+	/* align-items: center; */
+	justify-content: space-between;
+	box-shadow: var(--box-shadow);
+	z-index: 10000;
+	
 }
 
 header .navbar a {
 	font-size: 1.7rem;
 	padding: .5rem 1.5rem;
-	color: #ffffff;
+	color: rgb(255, 255, 255);
 	border: .1rem solid transparent;
 	margin-left: 20px;
 	text-decoration: none;
@@ -107,25 +123,27 @@ header .navbar a {
 
 header .navbar a.active,
 header .navbar a:hover {
-	color: var(white);
-	border: .1rem solid red;
+	border: .1rem solid rgba(205, 170, 124, 0.2);
 }
 
 header .icons i {
 	cursor: pointer;
-	/* margin-left: .5rem; */
-	height: 4.5rem;
-	width: 4.5rem;
-	line-height: 4.5rem;
-	/* background: var(--primary-color); */
-	text-align: center;
-	font-size: 2.7rem;
-	color: var(--primary-color);
+    /* margin-left: 0.5rem; */
+    /* height: 4.5rem; */
+    width: 4.5rem;
+    /* line-height: 4.5rem; */
+    /* background: var(--primary-color); */
+    text-align: center;
+    font-size: 2.7rem;
+    color: white;
+    float: right;
+    right: 0;
+    position: absolute;
 }
 
 header .icons i:hover {
 	color: #fff;
-	background: var(red);
+	background: var(--primary-color);
 	transform: rotate(360deg);
 }
 
@@ -143,4 +161,239 @@ header .icons a{
 		padding: 5px 10px;
 		color: var(--primary-color);
 		visibility: hidden;
+}
+
+/*navbar style end here*/
+
+/*slider style start*/
+
+
+
+
+/*custom scroll bar*/
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: #333;
+}
+
+/* ::-webkit-scrollbar-thumb {
+	background: var(--primary-color);
+} */
+
+/*jump to top*/
+.topbtn {
+	position: fixed;
+	right: 2%;
+	bottom: 10%;
+	width: 30px;
+	height: 30px;
+	background: var(--primary-color);
+	color: #fff;
+	cursor: pointer;
+	z-index: 1;
+
+}
+
+
+/*media query*/
+@media (max-width: 1274px) {
+	html {
+		font-size: 55%;
+	}
+
+	header {
+		padding: 1rem 2rem;
+	}
+
+	header .navbar a {
+		font-size: 1.5rem;
+		padding: .5rem 1rem;
+	
+	}
+
+	header .icons a{
+		font-size: 1.5rem;
+		position: absolute;
+		right: 10px;
+		text-decoration: none;
+		border: 2px solid var(--primary-color);
+		border-radius: 25px;
+		padding: 5px 10px;
+		color: var(--primary-color);
+		margin: 4px 0px 0px 0px;
+
+	}
+	
+
+}
+
+
+/*media query*/
+@media (max-width: 991px) {
+	html {
+		font-size: 55%;
+	}
+
+	header {
+		padding: 0rem 0rem;
+	}
+
+	header .navbar a {
+		font-size: 1.5rem;
+		padding: .5rem 1rem;
+	
+	}
+
+	header .logo img {
+		height: 7rem;
+	}
+
+	.our-menu .menu-container {
+		grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
+	}
+
+	.our-menu .menu-container .item .item-menu span {
+		width: 15%;
+	}
+
+	.contact-1{
+    
+        border-bottom: solid 0rem #ffffff;
+        border-right: solid 0.1rem #ffffff;
+    
+    }
+
+}
+
+@media (max-width: 900px) {
+
+	/* .topHead .headTitle .textContainer {
+		font-size: 10px;
+	} */
+
+	
+
+	/*navbar media query*/
+	header .logo img {
+		height: 7rem;
+	}
+
+	header .icons #menu {
+		display: inline-block;
+	}
+
+	header .navbar {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: #000000;
+		border-top: .1rem solid rgba(205, 170, 124, 0.2);
+		border-bottom: .1rem solid rgba(205, 170, 124, 0.2);
+		padding: 1rem;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		z-index: 10000;
+	}
+
+	header .navbar.active {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		background-color: red;
+	}
+
+	header .navbar a {
+		display: block;
+		padding: 1rem;
+		margin: 0.5rem;
+		font-size: 2rem;
+		background: var(--black);
+	}
+
+	header .icons a{
+		visibility:visible;
+	}
+
+	header .headtitle .phoneContainer .registrationForm{
+		visibility: hidden;
+	}
+
+	.topHead .headTitle .phoneContainer {
+		display:none;
+	}
+
+	.upper-part{
+		display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		left: 0;
+		flex-direction: row;
+    }
+
+    .headTitle .mama-logo{
+        height: auto; /* Allow the logo to resize with the header */
+		width: fit-content;
+    }
+
+    .headTitle .mama-logo .mama-logo-img{
+		height: auto;
+		width: 280px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+	/* .topHead .headTitle .textContainer {
+		font-size: 20px;
+	} */
+
+
+	/*navbar media query*/
+	header .logo img {
+		height: 7rem;
+	}
+
+	header .icons #menu {
+		display: inline-block;
+	}
+
+	header .navbar {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: #eee;
+		border-top: .1rem solid rgba(205, 170, 124, 0.2);
+		border-bottom: .1rem solid rgba(205, 170, 124, 0.2);
+		padding: 1rem;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+
+	header .navbar.active {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	header .navbar a {
+		display: block;
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 2rem;
+    background: var(--black);
+	}
+
+	.contact-1{
+    
+        border-bottom: solid 0.1rem #ffffff;
+        border-right: solid 0rem #ffffff;
+    
+    }
+
 }
