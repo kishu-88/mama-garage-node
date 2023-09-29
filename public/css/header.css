@@ -1,0 +1,146 @@
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+.topHead {
+	height: 300px; /* Adjust the height as per your design */
+	position: fixed;
+	overflow: hidden;
+	z-index: 1000;
+    
+  }
+.headTitle {
+	/* background-color: var(--primary-color); */
+	height: 100px;
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+	position: fixed;
+    background-color: black;
+    
+}
+
+.headTitle .mama-logo  {
+	height: -webkit-fill-available;
+    border-right: solid 0.2rem #ffffff;
+	/* margin: 2px; */
+    left: 2.5rem;
+    height: auto; /* Allow the logo to resize with the header */
+    width: auto;
+    max-height: 8rem; /* Limit the logo's maximum height */
+    max-width: 100%;
+    position: absolute;
+    top: 0.7rem;
+    vertical-align: top;
+}
+.upper-part p{
+    color: #ffffff;
+    float: right;
+}
+.upper-part{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    border-bottom: solid 0.1rem #ffffff;
+    box-sizing: border-box;
+    height: 4rem;
+    left: 22.6rem;
+    position: absolute;
+    width: 100%;
+    top: 10px;
+}
+
+.manigram-branch{
+    color: #ffffff;
+    
+}
+.manigram{
+   
+    width: fit-content;
+    padding-left: 15px;
+}
+.contact{
+    color: #ffffff;
+    flex-shrink: 0;
+    font-weight: 400;
+    white-space: nowrap;
+    border-right: solid 0.1rem #ffffff;
+    padding-right: 15px;
+
+}
+.butwal-branch{
+    color: #ffffff;
+    float: right;
+    margin-left: 10%;
+   
+}
+.butwal{
+    width: fit-content;
+    padding-left: 10px;
+}
+
+
+header {
+    position: fixed;
+    top: 63px;
+    left: 250px;
+    right: 0;
+    background: var(--white);
+    /* padding: 1rem 7%; */
+    display: flex;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    z-index: 10000;
+}
+
+header .navbar a {
+	font-size: 1.7rem;
+	padding: .5rem 1.5rem;
+	color: #ffffff;
+	border: .1rem solid transparent;
+	margin-left: 20px;
+	text-decoration: none;
+
+
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+	color: var(white);
+	border: .1rem solid red;
+}
+
+header .icons i {
+	cursor: pointer;
+	/* margin-left: .5rem; */
+	height: 4.5rem;
+	width: 4.5rem;
+	line-height: 4.5rem;
+	/* background: var(--primary-color); */
+	text-align: center;
+	font-size: 2.7rem;
+	color: var(--primary-color);
+}
+
+header .icons i:hover {
+	color: #fff;
+	background: var(red);
+	transform: rotate(360deg);
+}
+
+header .icons #menu {
+	display: none;
+}
+
+header .icons a{
+	font-size: 2rem;
+		position: absolute;
+		right: 10px;
+		text-decoration: none;
+		border: 2px solid var(--primary-color);
+		border-radius: 25px;
+		padding: 5px 10px;
+		color: var(--primary-color);
+		visibility: hidden;
+}
