@@ -86,7 +86,7 @@ html {
     flex-shrink: 0;
     font-weight: 400;
     white-space: nowrap;
-    padding-right: 15px;
+    padding-right: 16%;
     font-size: 12px;
 
 }
@@ -96,54 +96,232 @@ html {
 }
 
 
-header {
-	width: 100%;
-	left: 0;
-	right: 0;
-	background: var(--white);
-	padding: 1rem 7%;
-	display: flex;
-	/* align-items: center; */
-	justify-content: space-between;
-	box-shadow: var(--box-shadow);
-	z-index: 10000;
+
+header .org_navbar {
+	color: #ffffff;
+	font-size: 2rem;
+}
+header .org_navbar a {
+	color: #ffffff;
+	padding: -10.5rem 1.5rem;
+	text-decoration: none ;
+	font-family: 'quicksand', sans-serif;
+	font-size: 1.2rem;
+}
+
+
+header .org_navbar .header_items {
+	padding: 3px;
+	font-size: 2rem;
+	color: #ffffff ;
+	margin-left: 50px;
+}
+header .icons #menu {
+	display: none;
+}
+@media (max-width: 1050px) {
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 1rem 3%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		z-index: 10000;
+		opacity: 1;
+	}
+	header .icons #menu {
+		display: inline-block;
+	}
+
+	header .org_navbar {
+		position: absolute;
+		top: 100%;
+		height: 100vh;
+		left: 0;
+		right: 0;
+		border-top: .1rem solid rgba(205, 170, 124, 0.2);
+		border-bottom: .1rem solid rgba(205, 170, 124, 0.2);
+		padding: 1rem;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+		background-image: linear-gradient(to bottom left, #834242, #f50707);
+		animation: gradient-animation 1s;
+	}
+
+	@keyframes gradient-animation {
+		from {
+			opacity: 0;
+		}
+
+		to {
+			opacity: 1;
+		}
+	}
+
+	@keyframes spin {
+		from {
+			transform: translateY(-1000%);
+		}
+
+		to {
+			transform: translateY(0%);
+		}
+	}
+
+	header .org_navbar.active {
+		padding: 30px;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	header .org_navbar a {
+		display: block;
+		top:12%;
+		padding: 1.5rem 1rem 1rem 1rem;
+		margin: 25px 48px;
+		font-size: 1rem;
+		background: #3f4346;
+		animation: spin 2s ease-in-out;
+		border-radius: 25px;
+		color: white;
+	}
+
+	header .icons .header_items {
+		text-decoration: none !important;
+	}
+
 	
 }
 
-header .navbar a {
-	font-size: 1.7rem;
-	padding: .5rem 1.5rem;
-	color: rgb(255, 255, 255);
-	border: .1rem solid transparent;
-	margin-left: 20px;
-	text-decoration: none;
+@media (max-width: 350px) {
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 1rem 3%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		z-index: 10000;
+		opacity: 1;
+	}
 
+	header .org_navbar .active {
+		/* border: .5rem solid #424c4f; */
+		border-radius: 5px;
+		padding: 3px 15px 3px 15px;
+		background-color: #3f4346;
+		color: white;
+	
+		/* border-width: px; */
+	}
 
+	header .org_navbar .nav_hidden {
+		visibility: hidden;
+	
+		/* border-width: px; */
+	}
+
+	header .org_navbar .header_items:hover {
+		border: .5rem solid red;
+		transition: 0.5s;
+		border-radius: 5px;
+		/* padding: 3px 10px 3px 10px; */
+		background-color: #3f4346;
+		color: white;
+	}
+
+	header .org_navbar .header_items{
+		color: white;
+	}
+
+	/*navbar media query*/
+	header .logo img {
+		height: 5rem;
+		width: 100%;
+		margin-left: -142px
+	}
+
+	header .icons #menu {
+		display: inline-block;
+	}
+
+	header .org_navbar {
+		position: absolute;
+		top: 100%;
+		height: 100vh;
+		left: 0;
+		right: 0;
+		/* background: #eee; */
+		border-top: .1rem solid rgba(205, 170, 124, 0.2);
+		border-bottom: .1rem solid rgba(205, 170, 124, 0.2);
+		padding: 1rem;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+		background-image: linear-gradient(to bottom left, #834242, #f50707);
+		animation: gradient-animation 1s;
+		color: white;
+	}
+
+	@keyframes gradient-animation {
+		from {
+			opacity: 0;
+		}
+
+		to {
+			opacity: 1;
+		}
+	}
+
+	@keyframes spin {
+		from {
+			transform: translateY(-1000%);
+		}
+
+		to {
+			transform: translateY(0%);
+		}
+	}
+
+	header .org_navbar.active {
+		padding: 64px;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	header .org_navbar a {
+		display: block;
+		padding: 1.5rem;
+		margin: 1rem;
+		font-size: 2rem;
+		/* background: #5a5f63; */
+		animation: spin 2s ease-in-out;
+		border-radius: 25px;
+		color: white;
+	}
+
+	header .icons .header_items {
+		text-decoration: none !important;
+	}
+
+	/* .hidden-icons {
+		visibility: visible;
+	} */
 }
-
-header .navbar a.active,
-header .navbar a:hover {
-	border: .1rem solid rgba(205, 170, 124, 0.2);
-}
-
 header .icons i {
 	cursor: pointer;
-    /* margin-left: 0.5rem; */
-    /* height: 4.5rem; */
     width: 4.5rem;
-    /* line-height: 4.5rem; */
-    /* background: var(--primary-color); */
     text-align: center;
     font-size: 2.7rem;
     color: white;
     float: right;
     right: 0;
-    position: absolute;
+	top: 8%;
+    position: fixed;
 }
 
 header .icons i:hover {
 	color: #fff;
-	background: var(--primary-color);
 	transform: rotate(360deg);
 }
 
@@ -165,12 +343,6 @@ header .icons a{
 
 /*navbar style end here*/
 
-/*slider style start*/
-
-
-
-
-/*custom scroll bar*/
 
 ::-webkit-scrollbar {
 	width: 12px;
@@ -184,19 +356,7 @@ header .icons a{
 	background: var(--primary-color);
 } */
 
-/*jump to top*/
-.topbtn {
-	position: fixed;
-	right: 2%;
-	bottom: 10%;
-	width: 30px;
-	height: 30px;
-	background: var(--primary-color);
-	color: #fff;
-	cursor: pointer;
-	z-index: 1;
 
-}
 
 
 /*media query*/
@@ -252,7 +412,7 @@ header .icons a{
 		height: 7rem;
 	}
 
-	.our-menu .menu-container {
+	.menu .menu-container {
 		grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
 	}
 
@@ -319,13 +479,9 @@ header .icons a{
 		visibility:visible;
 	}
 
-	header .headtitle .phoneContainer .registrationForm{
-		visibility: hidden;
-	}
+	
 
-	.topHead .headTitle .phoneContainer {
-		display:none;
-	}
+	
 
 	.upper-part{
 		display: flex;
@@ -365,35 +521,6 @@ header .icons a{
 		display: inline-block;
 	}
 
-	header .navbar {
-		position: absolute;
-		top: 100%;
-		left: 0;
-		right: 0;
-		background: #eee;
-		border-top: .1rem solid rgba(205, 170, 124, 0.2);
-		border-bottom: .1rem solid rgba(205, 170, 124, 0.2);
-		padding: 1rem;
-		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-	}
-
-	header .navbar.active {
-		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-	}
-
-	header .navbar a {
-		display: block;
-    padding: 1rem;
-    margin: 0.5rem;
-    font-size: 2rem;
-    background: var(--black);
-	}
-
-	.contact-1{
-    
-        border-bottom: solid 0.1rem #ffffff;
-        border-right: solid 0rem #ffffff;
-    
-    }
+	
 
 }
