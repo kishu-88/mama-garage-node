@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mama Motor Parts</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/header.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
     <!-- header section starts -->
     <div class="topHead">
-      <div class="headTitle">
-        <div class="mama-logo">
-          <img class="mama-logo-img" src="./img/garage-white.png" alt="" />
+        <div class="headTitle">
+            <div class="mama-logo">
+                <img class="mama-logo-img" src="./img/garage-white.png" alt="" />
+            </div>
+            <div class="upper">
+                <div class="upper-part">
+                    <div class="contact contact-1">Manigram Branch, 980269972</div>
+                    <div class="contact">Milanchowk Branch, 980269972</div>
+                </div>
+                <div class="lower-part">
+                    <header>
+                        <nav class="org_navbar" id="myNav">
+                            <a href="#"><span class="header_items hover-underline-animation">Home</span></a>
+                            <a href="#"><span class="header_items hover-underline-animation">About Us</span></a>
+                            <a href="#"><span class="header_items hover-underline-animation">Our Team</span></a>
+                            <a href="#"><span class="header_items hover-underline-animation">Sale</span></a>
+                            <a href="#"><span class="header_items hover-underline-animation">Accessories</span></a>
+                            <a href="#"><span class=" header_items hover-underline-animation">Contact Us</span></a>
+                        </nav>
+                        <div class="icons">
+                            <i class="fas fa-bars" id="menu"></i>
+                        </div>
+                    </header>
+                </div>
+            </div>
         </div>
-        <div class="upper">
-            <div class="upper-part">
-                <div class="contact contact-1">Manigram Branch, 980269972</div>
-                <div class="contact">Milanchowk Branch, 980269972</div>
-              </div>
-              <div class="lower-part">
-                <header>
-                  <nav class="navbar">
-                    <a href="/">Home</a>
-                    <a href="/about">About Us</a>
-                    <a href="visionStatement">Vision Statement</a>
-                    <a href="/notices">Notices</a>
-
-                  </nav>
-            
-                  <div class="icons">
-                    <i class="fas fa-bars" id="menu"></i>
-                  </div>
-                </header>
-              </div>
-        </div>
-      </div>
     </div>
     <!-- header section ends -->
     <!-- <div class="bgimage">
@@ -70,13 +72,26 @@
       </div>
     </div> -->
     <script type="text/javascript">
-      let menu = document.querySelector("#menu");
-      let navbar = document.querySelector(".navbar");
-  
-      menu.onclick = () => {
-        menu.classList.toggle("fa-times");
-        navbar.classList.toggle("active");
-      };
+        let menu = document.querySelector('#menu');
+        let navbar = document.querySelector('.org_navbar');
+        let headerItems = document.querySelectorAll('.header_items');
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+
+        headerItems.forEach((item) => {
+            item.onclick = () => {
+                menu.classList.toggle('fa-times');
+                navbar.classList.toggle('active');
+            };
+        });
     </script>
-  </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</body>
+
 </html>
