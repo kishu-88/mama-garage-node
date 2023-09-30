@@ -146,7 +146,7 @@ header .icons #menu {
 		border-bottom: .1rem solid rgba(205, 170, 124, 0.2);
 		padding: 1rem;
 		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-		background-image: linear-gradient(to bottom left, #834242, #f50707);
+		background-image: linear-gradient(to bottom left, #000000, #000000);
 		animation: gradient-animation 1s;
 	}
 
@@ -181,7 +181,7 @@ header .icons #menu {
 		padding: 1.5rem 1rem 1rem 1rem;
 		margin: 25px 48px;
 		font-size: 1rem;
-		background: #3f4346;
+		background: #fa0000;
 		animation: spin 2s ease-in-out;
 		border-radius: 25px;
 		color: white;
@@ -207,7 +207,7 @@ header .icons #menu {
 		z-index: 10000;
 		opacity: 1;
 	}
-
+	
 	header .org_navbar .active {
 		/* border: .5rem solid #424c4f; */
 		border-radius: 5px;
@@ -229,7 +229,7 @@ header .icons #menu {
 		transition: 0.5s;
 		border-radius: 5px;
 		/* padding: 3px 10px 3px 10px; */
-		background-color: #3f4346;
+		background-color: #ff0000;
 		color: white;
 	}
 
@@ -259,7 +259,7 @@ header .icons #menu {
 		border-bottom: .1rem solid rgba(205, 170, 124, 0.2);
 		padding: 1rem;
 		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-		background-image: linear-gradient(to bottom left, #834242, #f50707);
+		background-image: linear-gradient(to bottom left, #000000, #000000);
 		animation: gradient-animation 1s;
 		color: white;
 	}
@@ -316,7 +316,7 @@ header .icons i {
     color: white;
     float: right;
     right: 0;
-	top: 8%;
+	top: 9%;
     position: fixed;
 }
 
@@ -521,6 +521,9 @@ header .icons a{
 		display: inline-block;
 	}
 
-	
+	.bgimage img {
+		width: 100%;
+		height: 100vh;
+	}
 
 }
