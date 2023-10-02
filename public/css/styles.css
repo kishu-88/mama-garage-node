@@ -288,19 +288,7 @@
 text-align: justify;
 float: left;
 }
-@media (max-width: 768px) {
-  .review-message {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .customer-image,
-  .customer-info {
-    flex: 1;
-    padding: 0;
-    text-align: center;
-  }
-}
 
 /* location-section css */
 .location{
@@ -338,4 +326,22 @@ float: left;
 }
 .map-container{
   margin-top: 2%;
+}
+
+
+@media (max-width: 768px) {
+  .review-message {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .customer-image,
+  .customer-info {
+    flex: 1;
+    padding: 0;
+    text-align: center;
+  }
+  .manigram-loc{
+    margin-bottom: 10px;
+  }
 }
