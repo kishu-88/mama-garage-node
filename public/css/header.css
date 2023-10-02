@@ -1,8 +1,8 @@
-html {
-	font-size: 62.5%;
-	/* overflow-x: hidden; */
-	scroll-behavior: smooth;
-}
+	html {
+		font-size: 62.5%;
+		/* overflow-x: hidden; */
+		scroll-behavior: smooth;
+	}
 
 :root {
 	--font-poppins: 'Poppins', sans-serif;
@@ -69,7 +69,6 @@ html {
 	border-bottom: solid 0.1rem #ffffff;
 	box-sizing: border-box;
 	height: 4rem;
-	left: 2rem;
 	position: relative;
 	width: 100%;
 	top: 10px;
@@ -196,7 +195,7 @@ header .icons #menu {
 	}
 
 	header .org_navbar.active {
-		padding: 30px;
+		padding: 0px;
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 	}
 
@@ -216,6 +215,12 @@ header .icons #menu {
 		text-decoration: none !important;
 	}
 
+	.headTitle {
+		/* background-color: var(--primary-color); */
+		height: 90px;
+	
+	}
+	
 
 }
 
@@ -351,10 +356,6 @@ header .icons i:hover {
 	transform: rotate(360deg);
 }
 
-header .icons #menu {
-	display: none;
-}
-
 header .icons a {
 	font-size: 2rem;
 	position: absolute;
@@ -415,6 +416,8 @@ header .icons a {
 	}
 
 
+
+
 }
 
 
@@ -468,9 +471,6 @@ header .icons a {
 		height: 7rem;
 	}
 
-	header .icons #menu {
-		display: inline-block;
-	}
 
 	header .navbar {
 		position: absolute;
@@ -522,7 +522,8 @@ header .icons a {
 
 	.headTitle .mama-logo .mama-logo-img {
 		height: auto;
-		width: 280px;
+		width: 200px;
+		max-width: 80%;
 	}
 
 
