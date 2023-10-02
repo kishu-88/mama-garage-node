@@ -1,15 +1,24 @@
 html {
 	font-size: 62.5%;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	scroll-behavior: smooth;
 }
+
+:root {
+	--font-poppins: 'Poppins', sans-serif;
+	--font-anton: 'Anton', sans-serif;
+	--font-inter: 'Inter', sans-serif;
+}
+
 .topHead {
-	height: 300px; /* Adjust the height as per your design */
+	height: 300px;
+	/* Adjust the height as per your design */
 	position: fixed;
 	overflow: hidden;
 	z-index: 1000;
-    
-  }
+
+}
+
 .headTitle {
 	/* background-color: var(--primary-color); */
 	height: 100px;
@@ -17,82 +26,88 @@ html {
 	display: flex;
 	overflow: hidden;
 	position: fixed;
-    background-color: black;
-    
-}
-
-    .headTitle .mama-logo  {
-        height: auto;
-        width: 230px;
-        border-right: solid 0.2rem #ffffff;
-        left: 2.5rem;
-
-    }
-
-    .headTitle .mama-logo .mama-logo-img{
-        height: -webkit-fill-available;
-		margin: 18px 0px 0px 10px;
-        
-        height: auto; /* Allow the logo to resize with the header */
-        width: 200px;
-        max-height: 8rem; /* Limit the logo's maximum height */
-        max-width: 100%;
-        /* position: absolute; */
-        top: 0.7rem;
-        vertical-align: top;
-    }
-
-
-
-    .upper{
-        width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    }
-.upper-part{
-    display: flex;
-    font-size: 12px;
-    align-items: center;
-    border-bottom: solid 0.1rem #ffffff;
-    box-sizing: border-box;
-    height: 4rem;
-    left: 2rem;
-    position: relative;
-    width: 100%;
-    top: 10px;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-
-.lower-part{
-
-    width: 100%;
-}
-.manigram-branch{
-    color: #ffffff;
-    
-}
-.manigram{
-   
-    width: fit-content;
-    padding-left: 15px;
-}
-.contact{
-    color: #ffffff;
-    flex-shrink: 0;
-    font-weight: 400;
-    white-space: nowrap;
-    padding-right: 16%;
-    font-size: 12px;
+	background-color: black;
 
 }
 
-.contact-1{
-    border-right: solid 0.1rem #ffffff;
+.headTitle .mama-logo {
+	height: auto;
+	width: 230px;
+	border-right: solid 0.2rem #ffffff;
+	left: 2.5rem;
+
+}
+
+.headTitle .mama-logo .mama-logo-img {
+	height: -webkit-fill-available;
+	margin: 18px 0px 0px 10px;
+
+	height: auto;
+	/* Allow the logo to resize with the header */
+	width: 200px;
+	max-height: 8rem;
+	/* Limit the logo's maximum height */
+	max-width: 100%;
+	/* position: absolute; */
+	top: 0.7rem;
+	vertical-align: top;
+}
+
+
+
+.upper {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.upper-part {
+	display: flex;
+	font-size: 12px;
+	align-items: center;
+	border-bottom: solid 0.1rem #ffffff;
+	box-sizing: border-box;
+	height: 4rem;
+	left: 2rem;
+	position: relative;
+	width: 100%;
+	top: 10px;
+	justify-content: space-around;
+	align-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+
+.lower-part {
+
+	width: 100%;
+}
+
+.manigram-branch {
+	color: #ffffff;
+
+}
+
+.manigram {
+
+	width: fit-content;
+	padding-left: 15px;
+}
+
+.contact {
+	color: #ffffff;
+	flex-shrink: 0;
+	font-weight: 400;
+	white-space: nowrap;
+	padding-right: 16%;
+	font-size: 12px;
+
+}
+
+.contact-1 {
+	border-right: solid 0.1rem #ffffff;
 }
 
 
@@ -101,10 +116,11 @@ header .org_navbar {
 	color: #ffffff;
 	font-size: 2rem;
 }
+
 header .org_navbar a {
 	color: #ffffff;
 	padding: -10.5rem 1.5rem;
-	text-decoration: none ;
+	text-decoration: none;
 	font-family: 'quicksand', sans-serif;
 	font-size: 1.2rem;
 }
@@ -112,13 +128,21 @@ header .org_navbar a {
 
 header .org_navbar .header_items {
 	padding: 3px;
-	font-size: 2rem;
-	color: #ffffff ;
+	/* font-size: 2rem; */
+	color: #ffffff;
 	margin-left: 50px;
+	font-family: var(--font-anton);
+	color: #FFF;
+	font-size: 3rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
+
 header .icons #menu {
 	display: none;
 }
+
 @media (max-width: 1050px) {
 	header {
 		position: fixed;
@@ -132,6 +156,7 @@ header .icons #menu {
 		z-index: 10000;
 		opacity: 1;
 	}
+
 	header .icons #menu {
 		display: inline-block;
 	}
@@ -177,7 +202,7 @@ header .icons #menu {
 
 	header .org_navbar a {
 		display: block;
-		top:12%;
+		top: 12%;
 		padding: 1.5rem 1rem 1rem 1rem;
 		margin: 25px 48px;
 		font-size: 1rem;
@@ -191,7 +216,7 @@ header .icons #menu {
 		text-decoration: none !important;
 	}
 
-	
+
 }
 
 @media (max-width: 350px) {
@@ -207,20 +232,20 @@ header .icons #menu {
 		z-index: 10000;
 		opacity: 1;
 	}
-	
+
 	header .org_navbar .active {
 		/* border: .5rem solid #424c4f; */
 		border-radius: 5px;
 		padding: 3px 15px 3px 15px;
 		background-color: #3f4346;
 		color: white;
-	
+
 		/* border-width: px; */
 	}
 
 	header .org_navbar .nav_hidden {
 		visibility: hidden;
-	
+
 		/* border-width: px; */
 	}
 
@@ -233,7 +258,7 @@ header .icons #menu {
 		color: white;
 	}
 
-	header .org_navbar .header_items{
+	header .org_navbar .header_items {
 		color: white;
 	}
 
@@ -308,16 +333,17 @@ header .icons #menu {
 		visibility: visible;
 	} */
 }
+
 header .icons i {
 	cursor: pointer;
-    width: 4.5rem;
-    text-align: center;
-    font-size: 2.7rem;
-    color: white;
-    float: right;
-    right: 0;
-	top: 9%;
-    position: fixed;
+	width: 4.5rem;
+	text-align: center;
+	font-size: 2.7rem;
+	color: white;
+	float: right;
+	right: 0;
+	top: 7%;
+	position: fixed;
 }
 
 header .icons i:hover {
@@ -329,16 +355,16 @@ header .icons #menu {
 	display: none;
 }
 
-header .icons a{
+header .icons a {
 	font-size: 2rem;
-		position: absolute;
-		right: 10px;
-		text-decoration: none;
-		border: 2px solid var(--primary-color);
-		border-radius: 25px;
-		padding: 5px 10px;
-		color: var(--primary-color);
-		visibility: hidden;
+	position: absolute;
+	right: 10px;
+	text-decoration: none;
+	border: 2px solid var(--primary-color);
+	border-radius: 25px;
+	padding: 5px 10px;
+	color: var(--primary-color);
+	visibility: hidden;
 }
 
 /*navbar style end here*/
@@ -372,10 +398,10 @@ header .icons a{
 	header .navbar a {
 		font-size: 1.5rem;
 		padding: .5rem 1rem;
-	
+
 	}
 
-	header .icons a{
+	header .icons a {
 		font-size: 1.5rem;
 		position: absolute;
 		right: 10px;
@@ -387,7 +413,7 @@ header .icons a{
 		margin: 4px 0px 0px 0px;
 
 	}
-	
+
 
 }
 
@@ -405,7 +431,7 @@ header .icons a{
 	header .navbar a {
 		font-size: 1.5rem;
 		padding: .5rem 1rem;
-	
+
 	}
 
 	header .logo img {
@@ -420,12 +446,12 @@ header .icons a{
 		width: 15%;
 	}
 
-	.contact-1{
-    
-        border-bottom: solid 0rem #ffffff;
-        border-right: solid 0.1rem #ffffff;
-    
-    }
+	.contact-1 {
+
+		border-bottom: solid 0rem #ffffff;
+		border-right: solid 0.1rem #ffffff;
+
+	}
 
 }
 
@@ -435,7 +461,7 @@ header .icons a{
 		font-size: 10px;
 	} */
 
-	
+
 
 	/*navbar media query*/
 	header .logo img {
@@ -475,33 +501,29 @@ header .icons a{
 		background: var(--black);
 	}
 
-	header .icons a{
-		visibility:visible;
+	header .icons a {
+		visibility: visible;
 	}
 
-	
-
-	
-
-	.upper-part{
+	.upper-part {
 		display: flex;
 		align-content: center;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		align-items: center;
-		left: 0;
 		flex-direction: row;
-    }
+	}
 
-    .headTitle .mama-logo{
-        height: auto; /* Allow the logo to resize with the header */
+	.headTitle .mama-logo {
+		height: auto;
+		/* Allow the logo to resize with the header */
 		width: fit-content;
-    }
+	}
 
-    .headTitle .mama-logo .mama-logo-img{
+	.headTitle .mama-logo .mama-logo-img {
 		height: auto;
 		width: 280px;
-    }
+	}
 
 
 }
