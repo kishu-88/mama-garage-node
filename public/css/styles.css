@@ -127,7 +127,7 @@
 
 .service-card .card img {
   width: 100%;
-  height: 150px;
+  height: 185px;
   padding: 2rem;
 }
 
@@ -141,7 +141,7 @@
   line-height: normal;
   text-align: center;
   background-color: white;
-  height: 130px;
+  height: 92px;
   overflow-y: hidden;
   color: black;
   border-radius: 0px 0px 25px 25px;
@@ -165,6 +165,7 @@
 .whyUs-heading {
   font-size: 30px;
   padding-top: 2%;
+  font-family: 'Poppins', sans-serif;
 }
 
 .why-us .whyUs-heading p {
@@ -204,15 +205,15 @@
   align-items: flex-end;
 }
 
-.wcard-heading .wcard-img img{
+.wcard-heading .wcard-img img {
   width: 42px;
   height: 34px;
   float: left;
   margin-left: 17px;
 }
 
-.wcard-heading .wcard-title{
-margin-left: 0.5rem;
+.wcard-heading .wcard-title {
+  margin-left: 0.5rem;
 }
 
 .wcard .content-wrapper {
@@ -221,4 +222,84 @@ margin-left: 0.5rem;
   text-align: justify;
   font-family: 'Poppins', sans-serif;
   font-size: 11px;
+}
+
+
+/* customer-review css */
+.customer-review {
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+}
+
+.customer-heading {
+  font-size: 30px;
+  padding-top: 2%;
+  font-family: 'Poppins', sans-serif;
+}
+.review-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ccc;
+  color: #000;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 2%;
+
+}
+
+.customer-image {
+  flex: 1;
+  padding-right: 20px;
+  /* Add spacing between image and info */
+}
+
+.cimage {
+  max-width: 100%;
+
+  /* border-radius: 50%; */
+  border-radius: 30rem;
+  height: 33rem;
+  left: 25px;
+  /* object-fit: cover;
+  position: absolute; */
+  top: 50px;
+  vertical-align: top;
+  width: 32rem;
+}
+
+.customer-info {
+  flex: 2;
+ 
+}
+
+.cname {
+  font-weight: bold;
+  color: red;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  float: left;
+}
+.customer-message{
+text-align: justify;
+float: left;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .review-message {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .customer-image,
+  .customer-info {
+    flex: 1;
+    padding: 0;
+    text-align: center;
+  }
 }
