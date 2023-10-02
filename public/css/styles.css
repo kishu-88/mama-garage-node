@@ -288,8 +288,6 @@
 text-align: justify;
 float: left;
 }
-
-/* Media query for responsiveness */
 @media (max-width: 768px) {
   .review-message {
     flex-direction: column;
@@ -302,4 +300,42 @@ float: left;
     padding: 0;
     text-align: center;
   }
+}
+
+/* location-section css */
+.location{
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  padding-top:2%
+  
+}
+.loc{
+  margin-left: 13%;
+  font-size: 30px;
+  /* padding-top: 2%; */
+  font-family: 'Poppins', sans-serif;
+  display: inline;
+  float: left;
+}
+.manigram-loc{
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  width: 200px;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+ 
+}
+.milanchowk-loc{
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  width: 200px;
+  height: 50px;
+  /* margin-top: 10%; */
+}
+.map-container{
+  margin-top: 2%;
 }

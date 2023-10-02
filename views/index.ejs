@@ -65,7 +65,7 @@
     <!-- our service starts -->
     <div class="our-service">
         <div class="service-heading">
-            <p>Our Services</p>
+            <p>OUR SERVICES</p>
         </div>
         <div class="service-card">
             <div class="card">
@@ -102,7 +102,7 @@
     <!-- why-Us starts -->
     <div class="why-us">
         <div class="whyUs-heading">
-            <p>Why US ?</p>
+            <p>WHY US ?</p>
         </div>
         <div class="whyUs-card">
             <div class="wcard">
@@ -178,7 +178,7 @@
     <!-- customer review section starts -->
     <div class="customer-review">
         <div class="customer-heading">
-            <p>What Customers Say About Us</p>
+            <p>WHAT CUSTOMERS SAY ABOUT US</p>
         </div>
         <div class="review-message">
             <div class="customer-image">
@@ -186,16 +186,71 @@
             </div>
             <div class="customer-info">
                 <p class="cname">Kishor Aryal</p>
-                <p class="customer-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                <p class="customer-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Rem dignissimos repellat numquam quam sed blanditiis debitis quod,
-                     ab molestias! Soluta, quae nam! Reprehenderit magnam voluptatum nam quibusdam 
-                     officiis eos autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae explicabo,
-                      nam optio nesciunt sapiente omnis quos laboriosam
-                      odit similique quisquam ducimus, laborum exercitationem numquam provident accusantium quidem modi dolor amet.</p>
+                    ab molestias! Soluta, quae nam! Reprehenderit magnam voluptatum nam quibusdam
+                    officiis eos autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae explicabo,
+                    nam optio nesciunt sapiente omnis quos laboriosam
+                    odit similique quisquam ducimus, laborum exercitationem numquam provident accusantium quidem modi
+                    dolor amet.</p>
             </div>
         </div>
     </div>
     <!-- customer review section ends -->
+
+    <!-- location section starts -->
+    <div class="location">
+        <div class="location-heading">
+            <p class="loc">FIND OUR LOCATION</p>
+
+            <button class="manigram-loc" onclick="showMap('manigram-map')" type="submit">
+                <a style="text-decoration: none; color: #ffffff">MANIGRAM BRANCH</a>
+            </button>
+            <button class="milanchowk-loc" onclick="showMap('milanchowk-map')" type="submit">
+                <a style="text-decoration: none; color: #ffffff">MILANCHOWK BRANCH</a>
+            </button>
+        </div>
+
+        <div id="manigram-map" class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113114.22692631646!2d83.38949582181188!3d27.630103573590734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996856c4301e593%3A0x6409bfbf65077290!2sMAMA%20Garage!5e0!3m2!1sen!2snp!4v1696223605036!5m2!1sen!2snp"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- Replace this with the actual map or iframe for Manigram Branch -->
+        </div>
+
+        <div id="milanchowk-map" class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113114.22692631646!2d83.38949582181188!3d27.630103573590734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399687cb41d416f7%3A0x66344d39a2a604c3!2sMama%20Garage%20%26%20Recondition!5e0!3m2!1sen!2snp!4v1696223672847!5m2!1sen!2snp"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+    <script>
+        showMap('manigram-map');
+
+        function showMap(mapId) {
+            // Hide all map containers
+            var mapContainers = document.querySelectorAll(".map-container");
+            mapContainers.forEach(function (container) {
+                container.style.display = "none";
+            });
+
+            // Show the selected map container
+            var selectedMap = document.getElementById(mapId);
+            selectedMap.style.display = "block";
+
+            // Update the active button styling
+            var buttons = document.querySelectorAll("button[data-map]");
+            buttons.forEach(function (button) {
+                button.classList.remove("active");
+            });
+            var activeButton = document.querySelector(`button[data-map="${mapId}"]`);
+            activeButton.classList.add("active");
+        }
+    </script>
+    <!-- location section ends -->
 
     <script type="text/javascript">
         let menu = document.querySelector("#menu");
