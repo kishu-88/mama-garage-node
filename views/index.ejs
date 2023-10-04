@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/ourServices.css" />
     <link rel="stylesheet" href="../css/whyus.css" />
     <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/loadingScreen.css" />
     <link rel="stylesheet" href="../css/swiper.css" />
     <link
       rel="stylesheet"
@@ -34,6 +35,9 @@
   </head>
 
   <body>
+    <!-- White loading screen -->
+    <div id="loading-screen"></div>
+
     <!-- header section starts -->
     <div class="topHead">
       <div class="headTitle">
@@ -486,6 +490,19 @@
       </footer>
     </div>
 
+    <script>
+      // Add this script at the bottom of your HTML, just before </body>
+
+      // Function to fade out the loading screen when the page is fully loaded
+      window.addEventListener("load", function () {
+        const loadingScreen = document.getElementById("loading-screen");
+        loadingScreen.style.opacity = "0"; // Set opacity to 0 to fade out
+        setTimeout(function () {
+          loadingScreen.style.display = "none"; // Hide the loading screen
+        }, 1000); // Adjust the duration of the fade-out (in milliseconds)
+      });
+    </script>
+
     <!-- <div class="t7" style="background-color: #000;text-align: center;
             padding: 10px; ">
                 <p style="font-size: 1.5rem; color: #ffffff;"><i class="fa-sharp fa-regular fa-copyright"></i> 2023 All Rights Reserved || Developed By <a href="https://www.facebook.com/triple7tech" target="_blank" style="text-decoration: underline;color:white">Triple Seven</a></p>
@@ -511,7 +528,7 @@
         } else {
           // Remove the 'scroll-bg' class if the user scrolls back to the top
           headTitle.classList.remove("scroll-bg");
-          logoImage.src = './img/garage-white.png';
+          logoImage.src = "./img/garage-white.png";
         }
       }
 
