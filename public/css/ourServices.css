@@ -8,67 +8,77 @@
   }
   
   .service-heading {
-    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Poppins', sans-serif;
     font-size: 30px;
     padding-top: 2%;
   }
   
   .service-heading p {
-    font-family: var(--font-anton);
+    font-family: var(--font-poppins);
     font-weight: 400;
     font-size: 4rem
   }
   
-  .service-card {
+  .service-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  
+    padding: 5rem 20rem;
+    color:black;
+
   }
   
-  .service-card .card {
-    height: 289px;
+  .service-cards .card {
+    height: fit-content;
     width: 250px;
     object-fit: cover;
     border: 2px solid red;
     border-radius: 25px;
     margin: 2rem 2rem;
+    background-color: white;
   }
   
-  .service-card .card a {
-    text-decoration: none;
+  .service-cards .card :hover{
     color: white;
+    background-color: red;
+    border-radius: 25px;
+
+
+  }
+
+  .service-cards .card a {
+    text-decoration: none;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+    color: black;
   }
   
-  /* .service-card .card:hover {
+  /* .service-cards .card:hover {
     border: 3px solid white;
     border-radius: 25px;
     margin: 2rem 2rem;
     color: #ffffff;
   }
   
-  .service-card .card:hover a {
+  .service-cards .card:hover a {
     color: #ffffff;
   }
   
-   .service-card .card:hover img {
+   .service-cards .card:hover img {
     width: 100%;
     height: 25rem;
     padding: 1rem;
     border-radius: 25px;
   } */
   
-  .service-card .card img {
+  /* .service-cards .card img {
     width: 100%;
     height: 185px;
     padding: 2rem;
-  }
+  } */
   
-  .service-card .card .service-name {
-    color: #000;
+  .service-cards .card .service-name {
     text-align: center;
     font-family: Poppins;
     font-size: 2.5rem;
@@ -76,16 +86,14 @@
     font-weight: 700;
     line-height: normal;
     text-align: center;
-    background-color: white;
-    height: 92px;
     overflow-y: hidden;
-    color: black;
-    border-radius: 0px 0px 25px 25px;
+    /* border-radius: 0px 0px 25px 25px; */
+    padding: 1rem 3rem;
   }
   
   @media (max-width: 900px) {
   
-    .service-card {
+    .service-cards {
       align-items: center;
     }
 
@@ -93,7 +101,15 @@
         font-size: 3rem
       }
 
+      .service-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 2rem;
+        color:black;
     
+      }
   
   }
   

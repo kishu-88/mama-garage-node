@@ -46,36 +46,50 @@
             <div class="contact">Milanchowk Branch, 980269972</div>
           </div>
           <div class="lower-part">
+            <div class="socialLinks">
+              <div class="fb">
+                <a style="color: inherit" href="facebook.com">Facebook</a>
+              </div>
+              <div class="insta">
+                <a style="color: inherit" href="instagram.com">Instagram</a>
+              </div>
+              <div class="insta">
+                <a style="color: inherit" href="Youtube.com">Youtube</a>
+              </div>
+              <div class="insta">
+                <a style="color: inherit" href="Whatsapp.com">Whatsapp</a>
+              </div>
+            </div>
             <header>
               <nav class="org_navbar" id="myNav">
                 <a href="#"
                   ><span class="header_items hover-underline-animation"
-                    >Home</span
+                    >HOME</span
                   ></a
                 >
                 <a href="#"
                   ><span class="header_items hover-underline-animation"
-                    >About Us</span
+                    >ABOUT US</span
                   ></a
                 >
                 <a href="#"
                   ><span class="header_items hover-underline-animation"
-                    >Our Team</span
+                    >OUR TEAM</span
                   ></a
                 >
                 <a href="#"
                   ><span class="header_items hover-underline-animation"
-                    >Sale</span
+                    >SALE</span
                   ></a
                 >
                 <a href="#"
                   ><span class="header_items hover-underline-animation"
-                    >Accessories</span
+                    >ACCESSORIES</span
                   ></a
                 >
                 <a href="#"
                   ><span class="header_items hover-underline-animation"
-                    >Contact Us</span
+                    >CONTACT US</span
                   ></a
                 >
               </nav>
@@ -110,34 +124,34 @@
       <div class="service-heading">
         <p>OUR SERVICES</p>
       </div>
-      <div class="service-card">
+      <div class="service-cards">
         <div class="card">
           <a href="#">
-            <img
-              src="./img/services/service.png"
+            <!-- <img
+              src="https://icons8.com/icon/21834/motorbike-helmet"
               alt="Avatar"
               style="width: 100%"
-            />
+            /> -->
             <div class="service-name">Servicing & Maintainance</div>
           </a>
         </div>
         <div class="card">
           <a href="#">
-            <img
+            <!-- <img
               src="./img/services/helmet.png"
               alt="Avatar"
               style="width: 100%"
-            />
-            <div class="service-name">Helmet House</div>
+            />  -->
+            <div class="service-name">Helmet <br />House</div>
           </a>
         </div>
         <div class="card">
           <a href="#">
-            <img
+            <!-- <img
               src="./img/services/service.png"
               alt="Avatar"
               style="width: 100%"
-            />
+            /> -->
             <div class="service-name">
               Parts & <br />
               Accessories
@@ -146,12 +160,32 @@
         </div>
         <div class="card">
           <a href="#">
-            <img
+            <!-- <img
               src="./img/services/service.png"
               alt="Avatar"
               style="width: 100%"
-            />
-            <div class="service-name">Customization</div>
+            /> -->
+            <div class="service-name">Premium <br />Customization</div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <!-- <img
+              src="./img/services/service.png"
+              alt="Avatar"
+              style="width: 100%"
+            /> -->
+            <div class="service-name">Sticker <br />House</div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <!-- <img
+              src="./img/services/service.png"
+              alt="Avatar"
+              style="width: 100%"
+            /> -->
+            <div class="service-name">Motorbike <br />Rental</div>
           </a>
         </div>
       </div>
@@ -231,14 +265,11 @@
     <!-- customer review section starts -->
     <!-- message section starts -->
     <div class="testimonial-swiper">
-        <div class="testimonial-heading">
-            WHAT CUSTOMERS SAY ABOUT US
-          </div>
-      <div class="swiper mySwiper" style="width: 100%;">
+      <div class="testimonial-heading">WHAT CUSTOMERS SAY ABOUT US</div>
+      <div class="swiper mySwiper" style="width: 100%">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="customer-review">
-              
               <div class="review-message">
                 <div class="customer-image">
                   <img class="cimage" src="./img/samundra.jpg" alt="" />
@@ -460,6 +491,33 @@
                 <p style="font-size: 1.5rem; color: #ffffff;"><i class="fa-sharp fa-regular fa-copyright"></i> 2023 All Rights Reserved || Developed By <a href="https://www.facebook.com/triple7tech" target="_blank" style="text-decoration: underline;color:white">Triple Seven</a></p>
             </div> -->
 
+    <script>
+      const logoImage = document.querySelector(".mama-logo-img");
+
+      const newImageSrc = "./img/garage-black.png"; // Replace with your new image URL
+
+      // Get a reference to the .headTitle element
+      const headTitle = document.querySelector(".headTitle");
+
+      // Function to handle scroll event
+      function handleScroll() {
+        // Check if the user has scrolled beyond a certain point (e.g., 100 pixels from the top)
+        if (window.scrollY > 100) {
+          // Change the image source
+          logoImage.src = newImageSrc;
+
+          // Add the 'scroll-bg' class to apply the background color
+          headTitle.classList.add("scroll-bg");
+        } else {
+          // Remove the 'scroll-bg' class if the user scrolls back to the top
+          headTitle.classList.remove("scroll-bg");
+          logoImage.src = './img/garage-white.png';
+        }
+      }
+
+      // Add a scroll event listener to the window
+      window.addEventListener("scroll", handleScroll);
+    </script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -487,13 +545,12 @@
 
     <!-- Initialize Swiper -->
     <script>
-         var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-    
-    });
-      </script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+      });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script
