@@ -1,0 +1,12 @@
+/* Style the white loading screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 1; /* Initial opacity set to 1 (fully visible) */
+    transition: opacity 1s ease-in-out; /* Add a smooth transition */
+    z-index: 9999; /* Ensure it's above other content */
+}
