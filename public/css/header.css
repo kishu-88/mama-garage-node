@@ -33,10 +33,12 @@
 
 	.scroll-bg {
 		background-color: white;
-		color: #000000; /* Add your desired background color here */
-	  }
+		color: #000000;
+		/* Add your desired background color here */
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	}
 
-	  
+
 	.headTitle .mama-logo {
 		height: auto;
 		width: 230px;
@@ -93,16 +95,16 @@
 	}
 
 
-	.lower-part .socialLinks{
+	.lower-part .socialLinks {
 		display: flex;
-           justify-content: space-around;
-		   font-size: 1.5rem;
+		justify-content: space-around;
+		font-size: 1.5rem;
 	}
 
-	.lower-part .socialLinks{
+	.lower-part .socialLinks {
 		display: flex;
-           justify-content: space-around;
-		   font-size: 1.5rem;
+		justify-content: space-around;
+		font-size: 1.5rem;
 	}
 
 
@@ -139,7 +141,7 @@
 	}
 
 	header .org_navbar a {
-		color:inherit;
+		color: inherit;
 		padding: -10.5rem 1.5rem;
 		text-decoration: none;
 		font-family: 'quicksand', sans-serif;
@@ -190,12 +192,13 @@
 			height: 100vh;
 			left: 0;
 			right: 0;
-			border-top: .1rem solid rgba(205, 170, 124, 0.2);
-			border-bottom: .1rem solid rgba(205, 170, 124, 0.2);
+			border-top: 0.1rem solid rgba(205, 170, 124, 0.2);
+			border-bottom: 0.1rem solid rgba(205, 170, 124, 0.2);
 			padding: 1rem;
 			clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-			background-image: linear-gradient(to bottom left, #000000, #000000);
-			animation: gradient-animation 1s;
+			background-image: linear-gradient(to bottom left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+			animation: gradient-animation 2s;
+
 		}
 
 		@keyframes gradient-animation {
@@ -219,20 +222,28 @@
 		}
 
 		header .org_navbar.active {
+			display: flex;
 			padding: 0px;
 			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: space-around;
 		}
 
 		header .org_navbar a {
 			display: block;
 			top: 12%;
 			padding: 1.5rem 1rem 1rem 1rem;
-			margin: 25px 48px;
+			/* margin: 25px 48px; */
 			font-size: 1rem;
 			background: #fa0000;
 			animation: spin 2s ease-in-out;
 			border-radius: 25px;
 			color: white;
+			float: right;
+			width: 240px;
+			margin-right: 50px;
+
 		}
 
 		header .icons .header_items {
@@ -261,7 +272,7 @@
 	}
 
 	header .icons i:hover {
-		color: #fff;
+		/* color: #fff; */
 		transform: rotate(360deg);
 	}
 
@@ -354,7 +365,7 @@
 			width: 200px;
 		}
 
-		.lower-part .socialLinks{
+		.lower-part .socialLinks {
 			display: none;
 		}
 
