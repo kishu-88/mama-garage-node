@@ -198,6 +198,7 @@ a {
 .customer-message {
   text-align: justify;
   float: left;
+  font-size: 1.5rem;
 }
 
 @media (max-width:900px) {

@@ -273,7 +273,6 @@
       <div class="swiper mySwiper" style="width: 100%">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="customer-review">
               <div class="review-message">
                 <div class="customer-image">
                   <img class="cimage" src="./img/samundra.jpg" alt="" />
@@ -291,31 +290,28 @@
                     numquam provident accusantium quidem modi dolor amet.
                   </p>
                 </div>
-              </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="customer-review">
-              <div class="review-message">
-                <div class="customer-image">
-                  <img class="cimage" src="./img/samundra.jpg" alt="" />
-                </div>
-                <div class="customer-info">
-                  <p class="cname">Samundra Bhari</p>
-                  <p class="customer-message">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Rem dignissimos repellat numquam quam sed blanditiis debitis
-                    quod, ab molestias! Soluta, quae nam! Reprehenderit magnam
-                    voluptatum nam quibusdam officiis eos autem. Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Vitae
-                    explicabo, nam optio nesciunt sapiente omnis quos laboriosam
-                    odit similique quisquam ducimus, laborum exercitationem
-                    numquam provident accusantium quidem modi dolor amet.
-                  </p>
-                </div>
+            <div class="review-message">
+              <div class="customer-image">
+                <img class="cimage" src="./img/samundra.jpg" alt="" />
               </div>
-            </div>
+              <div class="customer-info">
+                <p class="cname">Samundra Bhari</p>
+                <p class="customer-message">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Rem dignissimos repellat numquam quam sed blanditiis debitis
+                  quod, ab molestias! Soluta, quae nam! Reprehenderit magnam
+                  voluptatum nam quibusdam officiis eos autem. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Vitae
+                  explicabo, nam optio nesciunt sapiente omnis quos laboriosam
+                  odit similique quisquam ducimus, laborum exercitationem
+                  numquam provident accusantium quidem modi dolor amet.
+                </p>
+              </div>
           </div>
+        </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -519,7 +515,7 @@
       // Function to handle scroll event
       function handleScroll() {
         // Check if the user has scrolled beyond a certain point (e.g., 100 pixels from the top)
-        if (window.scrollY > 100) {
+        if (window.scrollY > 50) {
           // Change the image source
           logoImage.src = newImageSrc;
 
